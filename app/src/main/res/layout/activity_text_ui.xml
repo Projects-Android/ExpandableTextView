@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_bg"
+        android:padding="5dp"
+        android:text="TextView: This is a test sentence which can be very long. To make sure that the TextView has many lines."
+        android:textSize="14sp"
+        android:textColor="@color/selector_text_color"
+        android:maxLines="2"
+        android:ellipsize="middle"/>
+
+    <com.ev.library.ExpandableTextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_bg"
+        android:padding="5dp"
+        app:text="ExpandableTextView: This is a test sentence which can be very long. Here is test text(ljot sljs slg slg slg lsg sjg ). To make sure that the TextView has many lines."
+        app:textSize="14sp"
+        app:textColor="@color/selector_text_color"
+        app:foldDrawable="@drawable/selector_icon_fold"
+        app:unFoldDrawable="@drawable/selector_icon_unfold"
+        app:drawableSize="40px"
+        app:drawablePadding="10px"
+        app:drawablePosition="right"
+        app:maxLines="2"/>
+
+    <com.ev.library.ExpandableTextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_bg"
+        android:padding="5dp"
+        app:text="ExpandableTextView: This is a test sentence which can be very long. Here is test text(ljot sljs slg slg slg lsg sjg ). To make sure that the TextView has many lines."
+        app:textSize="14sp"
+        app:textColor="@color/selector_text_color"
+        app:foldDrawable="@drawable/selector_icon_fold"
+        app:unFoldDrawable="@drawable/selector_icon_unfold"
+        app:drawableSize="40px"
+        app:drawablePadding="10px"
+        app:drawablePosition="left"
+        app:maxLines="3" />
+</LinearLayout>
